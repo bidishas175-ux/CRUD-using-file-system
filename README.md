@@ -1,2 +1,34 @@
-# CRUD-using-file-system
-A simple CRUD API built with Node.js and Express.js using the File System (fs) module for data storage. This project performs Create, Read, Update, and Delete operations on user data stored in a JSON file instead of a database. It is designed for learning backend fundamentals and REST API development.
+#  CRUD API using File System (Node.js + Express)
+
+A simple **CRUD REST API** built with **Node.js and Express.js** using the **File System (fs module)** for data storage instead of a database. This project is designed for learning backend development and REST API concepts.
+
+---
+
+##  Features
+- Create user  
+- Read all users  
+- Read user by ID  
+- Update user  
+- Delete user  
+- JSON file-based storage  
+- REST API structure  
+
+---
+
+##  Tech Stack
+Node.js • Express.js • File System (fs) • JSON • dotenv
+
+
+
+##  Project Structure
+CRUD-using-file-system/
+│── app.js  
+│── MOCK_DATA.json  
+│── package.json  
+│── .gitignore  
+│── .env  
+│── /public  
+│── /views  
+
+
+
