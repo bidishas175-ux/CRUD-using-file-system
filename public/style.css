@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141E30, #243B55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Floating Background */
+.background span {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    animation: float 8s infinite ease-in-out;
+}
+
+.background span:nth-child(1) { top: 10%; left: 20%; }
+.background span:nth-child(2) { top: 60%; left: 70%; }
+.background span:nth-child(3) { top: 80%; left: 30%; }
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-40px); }
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+/* Form */
+.form-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.btn-primary {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* User Cards */
+.user-list {
+    display: grid;
+    gap: 15px;
+}
+
+.user-card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    font-size: 14px;
+}
+
+.actions button {
+    margin-left: 10px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn { background: orange; }
+.delete-btn { background: crimson; color: white; }
+
+/* Loader */
+.loader {
+    border: 5px solid rgba(255,255,255,0.2);
+    border-top: 5px solid #00c6ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+.hidden { display: none; }
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container fade-in">
+
+        <h1>🚀 User Management SaaS Dashboard</h1>
+
+        <!-- Alert Box -->
+        <div id="alertBox"></div>
+
+        <!-- User Form -->
+        <div class="glass-card">
+            <form id="userForm">
+                <input type="hidden" id="userId">
+
+                <div class="form-grid">
+                    <input type="text" id="first_name" placeholder="First Name">
+                    <input type="text" id="last_name" placeholder="Last Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="gender" placeholder="Gender">
+                    <input type="text" id="job_title" placeholder="Job Title">
+                </div>
+
+                <button type="submit" class="btn-primary">Save User</button>
+            </form>
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- User List -->
+        <div id="userList" class="user-list"></div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
